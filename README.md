@@ -17,6 +17,11 @@ Zeit
 - zeit account, oss free plan is ok
 - docker (optional, I'm use it for client proxy server)
 
+```bash
+$ yarn global add now
+# or $ npm i -g now
+```
+
 ### Usage
 
 Prepare secret
@@ -37,7 +42,7 @@ $ now
 You will get server\_ip from output (it's auto copied to your clipboards)
 
 
-Run client proxy
+Run client proxy in docker
 
 ```bash
 # Build image
@@ -55,8 +60,17 @@ METHOD=aes-128-cfb
 SERVER_IP=xx.now.sh
 ```
 
+Or run client in node.js
+```bash
+$ cd src
+$ yarn # or npm install
+$ node local.js -k YOUR_PASS -m aes-128-cfb -s SERVER_IP -l 1080 -r 443
+```
+
 
 ### Optional
 
 Install [Captain for mac](https://getcaptain.co) to start/pause your
 docker container
+PAC 智能代理 [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
+
