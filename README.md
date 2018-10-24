@@ -7,7 +7,7 @@ shadowsocks-zeit uses WebSocket instead of raw sockets, so it can be deployed on
 
 Notice that the protocol is INCOMPATIBLE with the origin shadowsocks.
 
-fork from [Shadowsocks](https://github.com/mrluanma/shadowsocks-heroku)
+fork from [Shadowsocks-heroku](https://github.com/mrluanma/shadowsocks-heroku)
 
 Zeit
 ------
