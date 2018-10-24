@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  ss:
+    image: weimi/ss:latest
+    ports:
+      - "1088:1088"
+    command: "node local.js -l 1088 -r 443 -k $KEY -m $METHOD -s $SERVER_IP"
+    build:
+      context: .
+
