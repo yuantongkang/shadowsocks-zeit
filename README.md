@@ -70,7 +70,7 @@ $ node local.js -k YOUR_PASS -m aes-128-cfb -s SERVER_IP -l 1080 -r 443
 
 ### Optional
 
-Install [Captain for mac](https://getcaptain.co) to start/pause your
+- Install [Captain for mac](https://getcaptain.co) to start/pause your
 docker container
-PAC 智能代理 [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
+- PAC 智能代理 [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 
