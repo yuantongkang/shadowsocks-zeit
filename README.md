@@ -15,7 +15,7 @@ Zeit
 ### Requirement
 
 - zeit account, oss free plan is ok
-- docker
+- docker (optional, I'm use it for client proxy server)
 
 ### Usage
 
@@ -58,5 +58,5 @@ SERVER_IP=xx.now.sh
 
 ### Optional
 
-Install [Captaion for mac](https://getcaptain.co) to start/pause your
+Install [Captain for mac](https://getcaptain.co) to start/pause your
 docker container
