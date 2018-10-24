@@ -282,10 +282,16 @@ var server = net.createServer(function(connection) {
   });
 });
 
-server.listen(PORT, LOCAL_ADDRESS, function() {
+// server.listen(PORT, LOCAL_ADDRESS, function() {
+//   const address = server.address();
+//   console.log('server listening at', address);
+// });
+server.listen(PORT, function() {
   const address = server.address();
   console.log('server listening at', address);
 });
+
+
 
 server.on('error', function(e) {
   if (e.code === 'EADDRINUSE') {

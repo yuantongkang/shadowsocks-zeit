@@ -55,7 +55,7 @@ if (['', 'null', 'table'].includes(METHOD.toLowerCase())) {
 
 const server = http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('asdf.');
+  res.end('hello');
 });
 
 const wss = new WebSocketServer({ server });
@@ -180,11 +180,14 @@ wss.on('connection', function(ws) {
 server.listen(PORT, LOCAL_ADDRESS, function() {
   const address = server.address();
   console.log('server listening at', address);
+  console.log('in method', METHOD);
 });
 
 server.on('error', function(e) {
   if (e.code === 'EADDRINUSE') {
     console.log('address in use, aborting');
+  } else {
+    console.log('server error', e.code)
   }
   process.exit(1);
 });

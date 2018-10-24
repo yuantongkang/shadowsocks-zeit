@@ -1,0 +1,10 @@
+{
+  "server": "127.0.0.1",
+  "local_address": "127.0.0.1",
+  "scheme": "wss",
+  "local_port": 1080,
+  "remote_port": 8080,
+  "password": "DANGER_REPLACE_IT!",
+  "timeout": 120,
+  "method": "aes-128-cfb"
+}
