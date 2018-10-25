@@ -45,11 +45,6 @@ You will get server\_ip from output (it's auto copied to your clipboards)
 Run client proxy in docker
 
 ```bash
-# Build image
-$ docker-compose -f client-compose.yml build ss
-# Run container in background
-$ docker-compose -f client-compose.yml up -d
-
 # For client, you will also need to change dotenv
 $ cp sample.env .env
 $ vim .env
@@ -58,6 +53,12 @@ $ cat .env
 KEY=YOUR_PASS
 METHOD=aes-128-cfb
 SERVER_IP=xx.now.sh
+
+# Build image
+$ docker-compose -f client-compose.yml build ss
+
+# Run container in background
+$ docker-compose -f client-compose.yml up -d
 ```
 
 Or run client in node.js
