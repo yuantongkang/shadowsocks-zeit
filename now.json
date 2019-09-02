@@ -6,7 +6,7 @@
     "cloud": "v2"
   },
   "env": {
-    "KEY": "@ss-key",
-    "METHOD": "@ss-method"
+    "KEY": "password",
+    "METHOD": "aes-256-cfb"
   }
 }
